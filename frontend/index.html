@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Solar system efficiency calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="http://d3js.org/d3.v6.min.js"></script>
+  <script type="text/javascript" src="linchart.js"></script>
+</head>
+
+<body>
+  <div id="main-content">
+    <div class="coordinate-query">
+      <input type="text" class="input" id="city-input" value="Enter the city name">
+      <select class="dropdown" id="dropdown" onmousedown="if(this.options.length>8){this.size=8;}"
+        onblur="this.size=0;"></select>
+      <input type="submit" class="submit" id="search-city" value="Search this city"><br>
+      <br><br>
+      <label for="lat">Latitude</label>
+      <input class=“city-info” type="text" class="input" id="lat" readonly>
+      <label for="lon">Longitude</label>
+      <input class=“city-info” type="text" class="input" id="lon" readonly>
+      <label for="tz">Time Zone</label>
+      <input class=“city-info” type="text" class="input" id="tz" readonly>
+      <br><br>
+    </div>
+    <div class="sliderArea">
+      <div>
+        <label for="slider1">Panel angle to ground:</label>
+        <input class="slider" type="range" id="panel-angle" min="0" max="90" value="45">
+        <output>45</output>
+      </div>
+      <br>
+      <div>
+        <label for="slider2">Air absorb rate: </label>
+        <input class="slider" type="range" id="absorb-rate" min="0" max="100" value="50">
+        <output>50</output>
+      </div>
+      <br>
+      <div>
+        <label for="slider3">Pipe efficiency: </label>
+        <input class="slider" type="range" id="pipe-efficiency" min="0" max="100" value="50">
+        <output>50</output>
+      </div>
+      <br><br>
+      <div>
+        <label for="calendar">Choose the date: </label>
+        <input id="calendar" type="date" min="2000-01-01" max="2050-12-31">
+      </div>
+      <br>
+      <div>
+        <input type="submit" class="submit" id="compute-effi" value="compute efficiency">
+      </div>
+    </div>
+    <div id="chart"></div>
+  </div>
+</body>
+
+</html>

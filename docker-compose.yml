@@ -1,0 +1,10 @@
+services:
+  frontend:
+    image: jw979/solar-heater:frontend
+    ports:
+      - "8080:8080"
+
+  backend:
+    image: jw979/solar-heater:backend
+    ports:
+      - "8000:8000"

@@ -1,0 +1,8 @@
+{   "host" : "0.0.0.0",
+    "port_number" : "8000",
+    "frontend_origin": "http://localhost:8080",
+    "debug_mode" : "True",
+    "solar_api" : "https://pvfree.azurewebsites.net/api/v1/pvlib/solarposition",
+    "database_name" : "database/cityinfo.db",
+    "table_name" : "cityinfo"
+}

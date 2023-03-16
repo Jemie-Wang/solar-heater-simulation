@@ -1,0 +1,80 @@
+/* Set font styles for the entire page */
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+
+/* div{
+  text-align: center;
+} */
+  
+  /* Style the dropdown menu */
+  .dropdown {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    margin: 4px 0px;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the input fields */
+  .input {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the submit button */
+  .submit {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Style the slider */
+  .sliderArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .sliderArea div{
+    margin: 4px 10px;
+  }
+
+  
+  /* Style the chart container */
+  #chart {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+  }
+
+  #search-city{
+    margin: 4px 180px;
+  }
+  
