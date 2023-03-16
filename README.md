@@ -45,19 +45,19 @@ Considering the impact of the angle of incidence. By researching [online](https:
 
 We convert the solar water heater efficiency into the following expression:
 
-$total\_efficiency = pipe\_efficiency \times (1 - air\_absortion\_rate) \times cos(incidence\_angle)$
+$totalEfficiency = pipeEfficiency \times (1 - airAbsortionRate) \times cos(incidenceAngle)$
 
 
 And the fromular for calculating the incidence angle $\theta$ is:
 
 >$cos(\theta) = cos(\beta) \times cos(\gamma) \times sin(\sigma) + sin(\beta) \times cos(\sigma)$
 
-where $\beta$ is the solar altitude, $\sigma$ is the difference between the azimuth, and here as we assume the panle will be facing due south, this could be regarded as pure solar azimuth. $\gamma$ is the panel tit angle.
+where $\beta$ is the solar altitude, $\sigma$ is the difference between the azimuth, and here as we assume the panle will be facing due south, this could be regarded as pure solar azimuth. $\gamma$ is the panel tilt angle.
 
 
-For getting the solar altitude and the azimuth, we refers to the [PVLIB API](https://pvfree.azurewebsites.net/pvlib/#solar-position), in this API, with the latitude, longitude, time difference to UTC time and date specificied, we could get the solar position information in the target day.
+For getting the solar altitude and the azimuth, we refer to the [PVLIB API](https://pvfree.azurewebsites.net/pvlib/#solar-position), in this API, with the latitude, longitude, and time difference to UTC and date specified, we could get the solar position information in the target day.
 
-To make the input more user friendly, we won't like the user to input the latitude and longitude, instead, we referes to [United States Cities Database](https://simplemaps.com/data/us-cities) and get allow the user to input the target city.
+To make the input more user-friendly, we won't let the user input the latitude and longitude, instead, we refer to [United States Cities Database](https://simplemaps.com/data/us-cities) and allow the user to input the target city and get the geolocation accordingly.
 
 <br>
 
@@ -97,4 +97,4 @@ frontend/
 
 The frontend is build with plain HTML, using jQuery for event handling and Ajax. The <code>scripts.js</code> organizes the pages and handles the event, the <code>lincharts.js</code> visualtion the result with mouse hover interaction.
 
-The codes are all equipped with full comments, please refers to the codes for more detail.
+The code is fully commented, please refer to the code for more detailed explanations.
