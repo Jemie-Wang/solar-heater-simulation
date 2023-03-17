@@ -45,7 +45,7 @@ Considering the impact of the angle of incidence. By researching [online](https:
 
 We convert the solar water heater efficiency into the following expression:
 
-$totalEfficiency = pipeEfficiency \times (1 - airAbsortionRate) \times cos(incidenceAngle)$
+>$totalEfficiency = pipeEfficiency \times (1 - airAbsortionRate) \times cos(incidenceAngle)$
 
 
 And the fromular for calculating the incidence angle $\theta$ is:
