@@ -7,7 +7,7 @@ As images need to be downloaded from Docker Hub and external APIs need to be acc
 To run the web app, please first make sure the docker is activated, and then download the <code>docker-compose.yml</code> file in this repo. In the same directory where <code>docker-compose.yml</code> is, run the commands:
 
 ```console
-docker-compose up -d # start the services
+docker-compose up -d
 ```
 The docker will automatically download the two image for backend and frontend from [docker hub](https://hub.docker.com/repository/docker/jw979/solar-heater/general).
 
@@ -20,7 +20,7 @@ Sometimes the external API may takes some time to response, pease allow it few s
 To stop the web app, run the command.
 
 ```console
-docker-compose down # stop the services
+docker-compose down
 ```
 <br>
 
